@@ -1,0 +1,104 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+/* HEADER general*/
+.header {
+    height: 40px;
+    background-color: #071A03;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Si usamos LOGO
+  .logoHeader {
+    display: flex;
+    float: left;
+  }
+  
+  #logo {
+    width: auto; Adaptar el ancho del logo al contenedor 
+    max-height: 50px; Ajustar la altura máxima del logo 
+    }
+  */
+
+/* Con NOMBRE de la página */
+.logoHeader {
+    display: flex; 
+    align-items: center; 
+    flex: 1; 
+    margin-left: 20px; 
+    text-decoration: none;
+  }
+  
+  .logoHeader .logo {
+    margin-right: 8px;
+  }
+  
+  .logoHeader span {
+    font-size: 20px;
+    color: #FFA500;
+  }
+
+  /* BARRA DE BUSQUEDA */
+  .buscador {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  
+  .inputBuscador {
+    flex-grow: 1;
+    padding: 5px;
+    border-radius: 25px 0px 0px 25px;
+    font-size: 12px;
+  }
+  
+  .botonBuscador {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0px 25px 25px 0px;
+    background-color: #39FF14
+  }
+  
+  .botonBuscador:hover {
+    background-color: #FFA500;
+    color: #FFFCFA;
+  }
+  
+  /* Estilos de la barra de navegación */
+  .navegacion {
+    display: flex;
+    width: 100%;
+    margin-right: 40px;
+  }
+
+  .navegacion ul {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+  }
+  
+  .navegacion li {
+    margin-left: 20px;
+    background-color: #FFE5C6;
+    border-radius: 5px;
+    color: #071A03;
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .linkNav {
+    text-decoration: none;
+    color: #071A03;
+    font-size: 14px;
+  }
+
+  .navegacion li:hover {
+    background-color: #FFA500; 
+    color: #071A03;
+  }

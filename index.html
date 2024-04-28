@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estiloGeneral.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Nombre de la página</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <!-- Si usamos un logo 
+                <div>
+                <a class="logoHeader" href="index.html">
+                    <img id="logo" src="#" alt="logo">   
+                </a>
+            </div> 
+            Si usamos sólo en nombre de la página -->
+            <a class="logoHeader" href="/index.html">
+                <i class="logo"></i>
+                <span>Nombre de la página</span>
+            </a> 
+
+            <ul class="listNav">
+                <li class="listItem">
+                    <a class="linkNav" href="#">Reseñas</a>
+                </li>
+                <li class="listItem">
+                    <a class="linkNav" href="#">Nosotros</a>
+                </li>
+                <li class="listItem">
+                    <a class="linkNav" href="#">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="buscadorContenedor">
+                <form class="buscador">
+                    <input class="inputBuscador" type="text" placeholder="Buscar reseña..." id="buscar" name="buscar">
+                    <button class="botonBuscador" type="submit" value="Buscar">Buscar</button>
+            </form>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" class="main">
+        <section class="seccionPrincipal">
+            <h1 class="tituloPrincipal">Nombre de la página</h1>
+
+            <h2 class="subtituloPrincipal">Eslogan que describa la página</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum minus harum totam nemo blanditiis! Quod accusantium totam nemo soluta facilis porro vel obcaecati. Aspernatur exercitationem eius totam iusto incidunt.</p>
+
+            <button class="botonReseñas" type="button">
+                <a href="#">Leer reseñas</a>
+            </button>
+            <button class="botonContacto" type="button">
+                <a href="#">Contactanos</a>
+            </button>
+
+            <div class="imgHome">
+                <img src="#" alt="Imagen de la home">
+            </div>
+
+        <hr>
+        <section id="masBuscados" 
+            class="reseñasMasBuscadas">
+            <h3 class="tituloSeccion">Reseñas màs buscadas</h3>
+                
+            <div class="reseña" id="reseñaContainer">
+                <div>
+                    <a href="#">
+                        <div class="fotoYtitulo">
+                            <img class="imgreseña" src="#" alt="Nombre Juego 1">
+                                <div class="tituloJuego">
+                                    <h4>Nombre del Juego 1</h4>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+                 <!-- Acá hay que replicar con las otras más buscadas -->
+            </div>
+            <button class="botonAnterior">Anterior</button>  
+            <button class="botoSiguiente">Siguiente</button>
+            <!-- Estos botones depués pueden cambiar a otra cosa, como una img o un icon o que sólo aparezcan en mobile, para desk podemos dejar sólo 4 o 5 reseñas sugeridas y que se vean sin botones. En mobile sería mejor deslizar o que haya un botón para que no aparezcan una por una, una debajo de la otra.-->
+        </section>
+        <hr>
+    </main>
+    <footer class="footer">
+        <nav class="navegacionFooter">
+            <a href="#">Términos y condiciones</a>
+            <div class="container">
+<!-- Acá yo pondría icons con el enlace a las redes (que podemos usar nuestras o crearlas para que existan jajaja quién sabe si alguno se quiera quedar con esta página y hacerla luego un proyecto personal) Aglo así: -->
+
+                <ul class="redesSociales">
+                    <li>
+                        <a href="mailto:correo@ejemplo.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p>&copy; 2024 <a href="#">Nombre de la página</a>. Todos los derechos reservados.</p>
+        </nav>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
