@@ -1,0 +1,105 @@
+header{
+    width: 100%;
+
+}
+
+
+main{
+    width: 75%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*ASIDE*/
+aside{
+    width: 25%;
+    background-color: #39ff14;
+    float: right;
+    margin: 10px 0px;
+    border-radius: 30px;
+}
+
+aside h3{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/*aside ul
+{
+margin-bottom: 10px;
+}*/
+
+aside ul li{
+    list-style-type: circle;
+    list-style-position: inside;
+    /*line-height: 2em;*/
+    font-size: 1.1em;
+    padding: 10px 10px;
+}
+
+/*MAIN*/
+h1{
+    color: #ffa500;
+    margin: 10px 0px;
+}
+
+h2{
+    font-size: 1.55em;
+
+
+}
+
+p{
+    margin: 20px 10px 50px 20px;
+    font-size: 1.1em;
+    text-indent: 1em;
+}
+
+img{
+    width: 35%;
+    max-height: 300px;
+    vertical-align: middle;
+    margin: 30px 20px 30px 50px;
+    border-style: solid;
+    border-color: #ffa500;
+    border-width: 10px;
+}
+/*USAR COLUMNAS, FLEXBOS O ALGUNA TECNOLOGIA RESPONSIVE PARA ALINEAR LAS IMAGENES MEJOR*/
+.contenedorImg{
+
+    background-color: #ffe5c6;
+    min-height: 100px;
+}
+
+
+/*Nota final*/
+.notaFinal
+{
+    width: 10%;
+    position: relative;
+    left: 45%;
+    /*background-color: black;*/
+    
+}
+
+.notaFinal h3
+{
+    color: #ffa500;
+    padding-bottom: 10px;
+}
+
+.contenedorNota 
+{
+    width : 3em;
+    height: 3em;
+    background-color: #39ff14;
+    margin: auto;
+}
+
+.contenedorNota span
+{
+    font-size: 1.2em;
+    
+}

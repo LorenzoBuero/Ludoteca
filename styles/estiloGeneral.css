@@ -12,7 +12,7 @@
 #39ff14*/
 
 footer{
-    float:left;
+    float: left;
     background-color: #ffe5c6;/*debería ser #071a03*/
     width: 100%;
 }
@@ -26,10 +26,11 @@ body {
 /* HEADER general*/
 .header {
     height: 40px;
-    background-color: #071A03;
-    padding: 10px 0;
+    /*background-color: #071A03;  */
+    padding: 10px 0px;
     display: flex;
     align-items: center;
+    /*position: fixed;*/
   }
   
   /* Si usamos LOGO
@@ -93,6 +94,9 @@ color: #FFFCFA;
 display: flex;
 width: 100%;
 margin-right: 40px;
+padding: 10px 0px;
+background-color: #071A03;
+position: fixed;
 }
 
 .navegacion ul {
