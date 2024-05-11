@@ -27,7 +27,7 @@ body {
 .header {
     height: 40px;
     /*background-color: #071A03;  */
-    padding: 10px 0px;
+    padding: 0px 0px 10px 0px;
     display: flex;
     align-items: center;
     /*position: fixed;*/
