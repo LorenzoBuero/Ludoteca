@@ -1,8 +1,14 @@
-/**{   
+/*Configuracion general*/
+*{   
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}*/
+}
+
+img
+{
+size: 100%;
+}
 
 /*COLORES
 #fffcfa
@@ -11,59 +17,73 @@
 #071a03
 #39ff14*/
 
+/*FOOTER GENERAL*/
 footer{
     float: left;
     background-color: #ffe5c6;/*debería ser #071a03*/
     width: 100%;
 }
 
+/*BODY GENERAL*/
 body {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     margin: 0;
 }
 
-/* HEADER general*/
+/* HEADER GENERAL*/
 .header {
-    height: 40px;
-    /*background-color: #071A03;  */
-    padding: 0px 0px 10px 0px;
-    display: flex;
-    align-items: center;
-    /*position: fixed;*/
-  }
-  
-  /* Si usamos LOGO
-  .logoHeader {
-    display: flex;
-    float: left;
-  }
-  
-  #logo {
-    width: auto; Adaptar el ancho del logo al contenedor 
-    max-height: 50px; Ajustar la altura máxima del logo 
-    }
-  */
+  height: 40px;
+  /*background-color: #071A03;  */
+  padding: 0px 0px 10px 0px;
+  display: flex;
+  align-items: center;
+}
 
-/* Con NOMBRE de la página */
+/*Barra De Navegacion*/
+.navegacion {
+  display: flex;
+  width: 100%;
+  margin-right: 40px;
+  padding: 10px 0px;
+  background-color: #071A03;
+  position: fixed;
+}    
+
+
+/*nombre y logo de la pagina*/
+.logoHeader span {
+  font-size: 20px;
+  color: #FFA500;
+}
+
 .logoHeader {
-    display: flex; 
-    align-items: center; 
-    flex: 1; 
-    margin-left: 20px; 
-    text-decoration: none;
-  }
-  
+  display: flex; 
+  align-items: center; 
+  flex: 1; 
+  margin-left: 20px; 
+  text-decoration: none;
+}
+
 .logoHeader .logo {
 margin-right: 8px;
 }
 
-.logoHeader span {
-font-size: 20px;
-color: #FFA500;
+/* Si usamos LOGO
+.logoHeader {
+  display: flex;
+  float: left;
 }
 
-/* BARRA DE BUSQUEDA */
+#logo {
+  width: auto; Adaptar el ancho del logo al contenedor 
+  max-height: 50px; Ajustar la altura máxima del logo 
+  }
+*/
+
+
+
+/* Barra de busqueda */
 .buscador {
 display: flex;
 align-items: center;
@@ -89,47 +109,29 @@ background-color: #FFA500;
 color: #FFFCFA;
 }
 
-/* Estilos de la barra de navegación */
-.navegacion {
-display: flex;
-width: 100%;
-margin-right: 40px;
-padding: 10px 0px;
-background-color: #071A03;
-position: fixed;
-}
 
+/*Botones de navegación*/
 .navegacion ul {
-list-style: none;
-margin: 0; 
-padding: 0; 
-display: flex;
+  list-style: none; 
+  display: flex;
 }
 
-.navegacion li {
-margin-left: 20px;
-background-color: #FFE5C6;
-border-radius: 5px;
-color: #071A03;
-font-weight: bold;
-padding: 5px 10px;
-}
-
-.linkNav {
-text-decoration: none;
-color: #071A03;
-font-size: 14px;
+.navegacion ul li {
+  margin-left: 20px;
+  background-color: #39FF14;
+  border-radius: 5px;
+  color: #071A03;
+  font-weight: bold;
+  padding: 5px 10px;
 }
 
 .navegacion li:hover {
-background-color: #FFA500; 
-color: #071A03;
+  background-color: #FFA500; 
+  color: #071A03;
 }
 
-
-/*Configuracion general*/
-img
-{
-size: 100%;
+.linkNav {/*Hay que arreglar esto porque no todo el botón funciona, solo funciona si clickeas en el texto*/
+  text-decoration: none;
+  color: #071A03;
+  font-size: 14px;
 }
-  
