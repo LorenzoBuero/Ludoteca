@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos - Sugerencias</title>
+    <link rel="stylesheet" href="../styles/estiloContacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="contenedorBodyIndex">
+        <header>
+            <div class="barraNavegacion">
+                <nav>
+                    <a href="../index.html">Inicio</a>
+                    <a href="resenias.html">Buscar reseñas</a>
+                    <a href="acerca_de.html">Sobre nosotros</a>
+                </nav>
+            </div>
+            <div class="titulos">
+                <h1>CONTACTO</h1>
+                <h2>Opciones de contacto:</h2>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </header>
+        <main>
+            <div class="contenedorMain">
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p>Puedes enviarnos un correo a <a href="mailto:contacto@ejemplo.com">ingresar mail</a></p>
+                </div>
+                <div class="contact-method">
+                    <h3>Teléfono</h3>
+                    <p>Llámamos al <a href="tel:+123456789">Ingresar telefono</a></p>
+                </div>
+                <div class="contact-method">
+                    <h3>Dirección</h3>
+                    <p>Visítanos en: Ingresar direccion</p>
+                </div>
+                <div class="contact-method">
+                    <h3>Formulario de Contacto</h3>
+                    <form class="contact-form" action="enviar_formulario.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        
+                        <label for="instagram">Instagram:</label>
+                        <input type="text" id="instagram" name="instagram" required>
+                        
+                        <label for="plataforma">Usuario de Plataforma Favorita de Juegos:</label>
+                        <input type="text" id="plataforma" name="plataforma" required>
+                        
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="contenedorFooter">
+                <div>&copy; Todos los derechos reservados por el grupo mas mejor</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
