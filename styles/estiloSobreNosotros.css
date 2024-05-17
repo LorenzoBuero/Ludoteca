@@ -1,12 +1,22 @@
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
+:root{
+    --blanco: #fffcfa;
+    /*--gris-fondo: #e7e7e7;*/
+    --rosita: #ffe5c6;
+    --naranja: #ffa500;
+    --verde-fuerte:#39ff14;
+    --negro-verdoso: #071a03;
+  
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
