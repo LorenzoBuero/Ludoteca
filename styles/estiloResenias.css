@@ -2,27 +2,29 @@ header{
     width: 100%;
 }
 
+:root{
+    --blanco: #fffcfa;
+    --gris-fondo: #e7e7e7;
+    --rosita: #ffe5c6;
+    --naranja: #ffa500;
+    --verde-fuerte:#39ff14;
+    --negro-verdoso: #071a03;
+}
 
-/*COLORES
-#fffcfa
-#ffe5c6
-#ffa500
-#071a03
-#39ff14*/
 /*-----------------------------------------------------------------------------------------------------*/
 /*ASIDE*/
 aside{
     width: 25%;
-
-    height: 276vh; /*Esto es una truchada, tengo que hacerlo mejor*/
+    height: 100%;
+    /*height: 276vh; /*Esto es una truchada, tengo que hacerlo mejor*/
     float: right;
-    background-color:#e7e7e7;
+    background-color:var(--gris-fondo);
 }
 
 .divAside{
     height: auto;
     min-height: 30%;
-    background-color: #ffa500;  
+    background-color: var(--naranja);  
     margin: 20px 2%;
     border-radius: 20px;
 }
@@ -43,13 +45,13 @@ padding-bottom: 200px;/*provisional*/
     line-height: 1.3em;
     font-size: 1.1em;
     padding: 15px 10px;
-    color: #071a03;
+    color: var(--negro-verdoso)
 }
 
 .divAside p /*ESTO ES DE UN PLACEHOLDER, BORRAR*/
 {
     padding-bottom: 100px;
-    color: #071a03;
+    color: var(--negro-verdoso)
 }
 
 
@@ -61,12 +63,12 @@ main{
     float: left;
     /*margin-bottom: 20px;*/
     padding-left: 10%;
-    background-color: #e7e7e7;
+    background-color: var(--gris-fondo);
     
 }
 
 .contenidoResenia{
-    background-color: #fffcfa;
+    background-color: var(--blanco);
     border-radius: 20px;
     padding-bottom: 30px;
     margin-bottom: 30px;
@@ -80,12 +82,12 @@ main{
 }
 
 h1{
-    color: #ffa500;
+    color: var(--naranja);
     padding: 20px 0px 10px 0px;
 }
 
 h2{
-    /*color: #ffd078;*/
+    color: var(--negro-verdoso);
     font-size: 1.55em;
 }
 
@@ -108,7 +110,7 @@ p{
 
 .textoResenia p{
     margin: 20px 0px;
-    background-color: #fffcfa;
+    background-color: var(--blanco);
 }
 
 
@@ -116,12 +118,11 @@ p{
 /*imagenes*/
 .contenedorImg{
 
-    /*background-color: #ffa500;*/
     min-height: 100px;
     /*width: 70%;*/
-    /*margin: 0px 7%;*/
     
     display: flex;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
 }
@@ -129,7 +130,6 @@ p{
 .contenedorImg img{
     width: auto;
     height: 200px;/*HACER ESTO PERO RESPONSIVE*/
-    margin: 0px 5%;
     
     border-radius: 10px;    
 }
@@ -144,27 +144,28 @@ p{
     width: 80%;
     min-height: 250px;
 
-    background-color: #071a03;
+    background-color: var(--negro-verdoso);
     border-radius: 20px 20px 100px 100px;
 
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
 
 }
 
 #notaFinal{
     
-    padding-left: 3%;
+    /*padding-left: 3%;*/
 
     width: auto;
     display: inline-block;
 }
 
 #notaFinal h3{
-    color: #ffa500;
+    color: var(--naranja);
     font-size: 1.4em;
     
-    padding-left: 15%;
+    /*padding-left: 15%;*/
     padding-bottom: 10px;
  
 }
@@ -174,7 +175,7 @@ p{
     height: 5em;
     margin: auto;
 
-    background-color: #39ff14;
+    background-color: var(--verde-fuerte);
     border-radius: 40%;
 
     display: flex;
@@ -189,14 +190,14 @@ p{
 }
 
 #sintesis{
-    max-width: 80%;
-    margin: 0px 5%; 
+    max-width: 70%;
+   /* margin: 0px 5%;*/ 
     display: inline-block;
 }
 
 #sintesis p
 {
-    color:#ffa500;
+    color:var(--naranja);
     text-indent: 0px;
 }
 

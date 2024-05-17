@@ -5,22 +5,27 @@
     box-sizing: border-box;
 }
 
+:root{
+  --blanco: #fffcfa;
+  /*--gris-fondo: #e7e7e7;*/
+  --rosita: #ffe5c6;
+  --naranja: #ffa500;
+  --verde-fuerte:#39ff14;
+  --negro-verdoso: #071a03;
+
+}
+
+
 img
 {
 size: 100%;
 }
 
-/*COLORES
-#fffcfa
-#ffe5c6
-#ffa500
-#071a03
-#39ff14*/
 
 /*FOOTER GENERAL*/
 footer{
     float: left;
-    background-color: #ffe5c6;/*debería ser #071a03*/
+    background-color: var(--rosita);/*debería ser #071a03*/
     width: 100%;
 }
 
@@ -46,7 +51,7 @@ body {
   width: 100%;
   margin-right: 40px;
   padding: 10px 0px;
-  background-color: #071A03;
+  background-color: var(--negro-verdoso);
   position: fixed;
 }    
 
@@ -54,7 +59,7 @@ body {
 /*nombre y logo de la pagina*/
 .logoHeader span {
   font-size: 20px;
-  color: #FFA500;
+  color: var(--naranja);
 }
 
 .logoHeader {
@@ -101,12 +106,12 @@ font-size: 12px;
 padding: 5px 10px;
 border: none;
 border-radius: 0px 25px 25px 0px;
-background-color: #39FF14
+background-color: var(--verde-fuerte);
 }
 
 .botonBuscador:hover {
-background-color: #FFA500;
-color: #FFFCFA;
+background-color: var(--naranja);
+color: var(--blanco);
 }
 
 
@@ -118,20 +123,20 @@ color: #FFFCFA;
 
 .navegacion ul li {
   margin-left: 20px;
-  background-color: #39FF14;
+  background-color: var(--verde-fuerte);
   border-radius: 5px;
-  color: #071A03;
+  color: var(--negro-verdoso);
   font-weight: bold;
   padding: 5px 10px;
 }
 
 .navegacion li:hover {
-  background-color: #FFA500; 
-  color: #071A03;
+  background-color: var(--naranja); 
+  color: var(--negro-verdoso);
 }
 
 .linkNav {/*Hay que arreglar esto porque no todo el botón funciona, solo funciona si clickeas en el texto*/
   text-decoration: none;
-  color: #071A03;
+  color: var(--negro-verdoso);
   font-size: 14px;
 }
