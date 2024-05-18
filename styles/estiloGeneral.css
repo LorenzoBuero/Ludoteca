@@ -1,142 +1,154 @@
 /*Configuracion general*/
-*{   
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-:root{
+/* PALETA DE COLORES */
+:root {
   --blanco: #fffcfa;
-  /*--gris-fondo: #e7e7e7;*/
+  --gris-fondo: #e7e7e7;
   --rosita: #ffe5c6;
   --naranja: #ffa500;
-  --verde-fuerte:#39ff14;
+  --verde-fuerte: #39ff14;
   --negro-verdoso: #071a03;
-
 }
 
 
-img
-{
-size: 100%;
-}
+img { size: 100% }
 
 
-/*FOOTER GENERAL*/
-footer{
-    float: left;
-    background-color: var(--rosita);/*debería ser #071a03*/
-    width: 100%;
-}
-
-/*BODY GENERAL*/
+/* BODY */
 body {
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
 }
+main
+{
+  margin-top: 40px;
+}
+
 
 /* HEADER GENERAL*/
+/* 
 .header {
-  height: 40px;
-  /*background-color: #071A03;  */
-  padding: 0px 0px 10px 0px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+*/ /* BORRÉ EL HEADER, EL POR QUÉ ESTÁ EN EL ARCHIVO .txt */
+
+
+
+
+/* NAV-BAR */
+.nav {
+  background-color: var(--negro-verdoso);
+  padding: 15px 2% 15px 3%;
+  /*display: grid;
+  grid-template-columns: 100%;*/
+  width: 100%;
+  position: fixed;
+}
+
+/* lista que contiene los elementos del nav */
+.nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+
+
+
+
+
+
+/* ELEMENTOS DEL NAV */
+
+/* título del nav */
+.nav-logo {
+  /* text-decoration: none; */ /* NO CAMBIA NADA */
+  font-size: 2em;
+  color: var(--naranja);
+}
+
+/* links del nav */
+.nav-link {
+  background-color: var(--verde-fuerte);
+  border-radius: 5px;
+  color: var(--negro-verdoso);
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 15px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* efecto aplicado a los links de la navbar cuando se hace hover sobre ellos */
+.nav-link:hover {
+  background-color: var(--naranja);
+  color: var(--negro-verdoso);
+  transition: all 250ms;
+}
+
+/* esto mueve los links del nav hacia el medio (selecciona el 2do hijo de tipo <li>, y le dice "poné todo el espacio que tengas, como margin-left") */
+.nav ul li:nth-child(2) {
+  margin-left: auto;
+}
+
+/* exactamente lo mismo que el anterior, pero para mover el buscador hacia la derecha de todo */
+.nav ul li:nth-child(4) {
+  margin-right: auto;
+}
+
+/* .navegacion ul:nth-child(2) {
+  padding: 300px;
+} */ /*NO CAMBIA NADA*/
+
+/* .nav-link a {
+  padding: 5px 15px;
+} */ /*NO CAMBIA NADA*/
+
+
+
+
+
+/* --- BUSCADOR DE RESEÑAS --- */
+/* contenedor del formulario "buscador" (input + botón) */
+.buscador {
   display: flex;
   align-items: center;
 }
 
-/*Barra De Navegacion*/
-.navegacion {
-  display: flex;
-  width: 100%;
-  margin-right: 40px;
-  padding: 10px 0px;
-  background-color: var(--negro-verdoso);
-  position: fixed;
-}    
-
-
-/*nombre y logo de la pagina*/
-.logoHeader span {
-  font-size: 20px;
-  color: var(--naranja);
+/* estilos del input para buscar */
+.input-search {
+  /* flex-grow: 1; */ /*TODOS LOS FLEX-ITEMS TIENEN FLEX-GROW 1 POR DEFECTO*/
+  border-radius: 25px 0px 0px 25px;
+  /* font-size: 12px; */ /*CAMBIARLE EL FONT-SIZE HACÍA QUE NO QUEDE ALINEADO CON EL BOTÓN*/
 }
 
-.logoHeader {
-  display: flex; 
-  align-items: center; 
-  flex: 1; 
-  margin-left: 20px; 
-  text-decoration: none;
-}
-
-.logoHeader .logo {
-margin-right: 8px;
-}
-
-/* Si usamos LOGO
-.logoHeader {
-  display: flex;
-  float: left;
-}
-
-#logo {
-  width: auto; Adaptar el ancho del logo al contenedor 
-  max-height: 50px; Ajustar la altura máxima del logo 
-  }
-*/
-
-
-
-/* Barra de busqueda */
-.buscador {
-display: flex;
-align-items: center;
-margin-left: 40px;
-}
-
-.inputBuscador {
-flex-grow: 1;
-padding: 5px;
-border-radius: 25px 0px 0px 25px;
-font-size: 12px;
-}
-
-.botonBuscador {
-padding: 5px 10px;
-border: none;
-border-radius: 0px 25px 25px 0px;
-background-color: var(--verde-fuerte);
-}
-
-.botonBuscador:hover {
-background-color: var(--naranja);
-color: var(--blanco);
-}
-
-
-/*Botones de navegación*/
-.navegacion ul {
-  list-style: none; 
-  display: flex;
-}
-
-.navegacion ul li {
-  margin-left: 20px;
+/* estilos del botón */
+.button-submit {
+  border-radius: 0px 25px 25px 0px;
   background-color: var(--verde-fuerte);
-  border-radius: 5px;
-  color: var(--negro-verdoso);
-  font-weight: bold;
+}
+
+/* estilos iguales tanto en el input como en el botón */
+.input-search, .button-submit {
   padding: 5px 10px;
+  border: none;
 }
 
-.navegacion li:hover {
-  background-color: var(--naranja); 
-  color: var(--negro-verdoso);
+.button-submit:hover {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  transition: all 250ms;
 }
 
-.linkNav {/*Hay que arreglar esto porque no todo el botón funciona, solo funciona si clickeas en el texto*/
-  text-decoration: none;
-  color: var(--negro-verdoso);
-  font-size: 14px;
-}
+
+
+/* FOOTER */
+footer {background-color: var(--rosita);}

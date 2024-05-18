@@ -5,17 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nosotros</title>
+
+    <link rel="stylesheet" href="../styles/estiloGeneral.css">
     <link rel="stylesheet" href="../styles/estiloSobreNosotros.css">
 </head>
 <body>
     <header>
-        <h1>Sobre Nosotros</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="paginas/resenias.html">Buscar reseñas</a>
-            <a href="#" target="">Contacto</a>
-        </nav>
+        
+        <nav class="nav">
+            <!-- Si usamos un logo 
+                <div>
+                <a class="logoHeader" href="index.html">
+                    <img id="logo" src="#" alt="logo">   
+                </a>
+            </div> 
+            Si usamos sólo en nombre de la página -->
+    
+            <ul>
+                <li><a href="../../index.html" class="nav-logo"><i class="logo"></i>Ludoteca</a></li>
+                <li><a class="nav-link" href="#">Reseñas</a></li>
+                <li><a class="nav-link" href="../sobreNosotros.html">Nosotros</a></li>
+                <li><a class="nav-link" href="../contacto.html">Contacto</a></li>
+                <li>
+                    <form class="buscador">
+                        <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
+                        <button class="button-submit" type="submit" value="Buscar">Buscar</button>
+                    </form>
+                </li>
+            </ul>
+        </nav> 
     </header>
+
+    <h1>a</h1>
+
     <main>
         <section>
             <h2>Nuestra Historia</h2>

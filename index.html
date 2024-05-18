@@ -8,12 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <title>Nombre de la página</title>
+    <title>Ludoteca-Inicio</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navegacion">
+    
+        <nav class="nav">
             <!-- Si usamos un logo 
                 <div>
                 <a class="logoHeader" href="index.html">
@@ -21,31 +21,22 @@
                 </a>
             </div> 
             Si usamos sólo en nombre de la página -->
-            <a class="logoHeader" href="/index.html">
-                <i class="logo"></i>
-                <span>Nombre de la página</span>
-            </a> 
-
-            <ul class="listNav">
-                <li class="listItem">
-                    <a class="linkNav" href="#">Reseñas</a>
-                </li>
-                <li class="listItem">
-                    <a class="linkNav" href="../Ludoteca/pages/sobreNosotros.html">Sobre Nosotros</a>
-                </li>
-                <li class="listItem">
-                    <a class="linkNav" href="../Ludoteca/pages/contacto.html">Contacto</a>
+    
+            <ul>
+                <li><a href="../../index.html" class="nav-logo"><i class="logo"></i>Ludoteca</a></li>
+                <li><a class="nav-link" href="#">Reseñas</a></li>
+                <li><a class="nav-link" href="../sobreNosotros.html">Nosotros</a></li>
+                <li><a class="nav-link" href="../contacto.html">Contacto</a></li>
+                <li>
+                    <form class="buscador">
+                        <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
+                        <button class="button-submit" type="submit" value="Buscar">Buscar</button>
+                    </form>
                 </li>
             </ul>
-
-            <div class="buscadorContenedor">
-                <form class="buscador">
-                    <input class="inputBuscador" type="text" placeholder="Buscar reseña..." id="buscar" name="buscar">
-                    <button class="botonBuscador" type="submit" value="Buscar">Buscar</button>
-            </form>
-            </div>
-        </nav>
-    </header>
+        </nav> 
+    
+        <header>a-</header>
 
     <main id="main" class="main">
         <section class="seccionPrincipal">

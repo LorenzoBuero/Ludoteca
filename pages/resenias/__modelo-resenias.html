@@ -10,62 +10,41 @@
 
 
 <body>
-    
-    <header class="header">
-        <nav class="navegacion">
-            <!-- Si usamos un logo 
-                <div>
-                <a class="logoHeader" href="index.html">
-                    <img id="logo" src="#" alt="logo">   
-                </a>
-            </div> 
-            Si usamos sólo en nombre de la página -->
-            <a class="logoHeader" href="/index.html">
-                <i class="logo"></i>
-                <span>Ludoteca</span>
-            </a> 
+    <nav class="nav">
+        <!-- Si usamos un logo 
+            <div>
+            <a class="logoHeader" href="index.html">
+                <img id="logo" src="#" alt="logo">   
+            </a>
+        </div> 
+        Si usamos sólo en nombre de la página -->
 
-            <ul class="listNav">
-                <li class="listItem">
-                    <a class="linkNav" href="#">Reseñas</a>
-                </li>
-                <li class="listItem">
-                    <a class="linkNav" href="#">Nosotros</a>
-                </li>
-                <li class="listItem">
-                    <a class="linkNav" href="#">Contacto</a>
-                </li>
-            </ul>
-
-            <div class="buscadorContenedor">
+        <ul>
+            <li><a href="../../index.html" class="nav-logo"><i class="logo"></i>Ludoteca</a></li>
+            <li><a class="nav-link" href="#">Reseñas</a></li>
+            <li><a class="nav-link" href="../sobreNosotros.html">Nosotros</a></li>
+            <li><a class="nav-link" href="../contacto.html">Contacto</a></li>
+            <li>
                 <form class="buscador">
-                    <input class="inputBuscador" type="text" placeholder="Buscar reseña..." id="buscar" name="buscar">
-                    <button class="botonBuscador" type="submit" value="Buscar">Buscar</button>
-            </form>
-            </div>
-        </nav>
-            
-        
-    </header>
-    
+                    <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
+                    <button class="button-submit" type="submit" value="Buscar">Buscar</button>
+                </form>
+            </li>
+        </ul>
+    </nav>  
 
-
+    <header>a</header><!--TRUCHADA-->
 
     <main class="main">
 
-        <div class="divMain">
+            <article class="article">
 
-            <div class="contenidoResenia">
-
-
-                <div class="divTitulos">
-                    <h1>Nombre del juego #</h1>
-                    <h2>Subtitulo corto y llamativo del juego #</h2>
-                </div>    
+                <section class="divTitulos">
+                    <h1>Nombre del juego</h1>
+                    <h2>Subtitulo corto y llamativo del juego</h2>
+                </section>
                 
-
-                
-                <div class="textoResenia">
+                <section class="article-text">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
                         nostrum officiis voluptate, placeat modi repellendus, dolorem odit perferendis, 
@@ -75,12 +54,12 @@
                         rem minima iure voluptates quasi reprehenderit omnis est.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
                         nostrum officiis voluptate, placeat modi repellendus, dolorem odit perferendis, 
-                        rem minima iure voluptates quasi reprehenderit omnis est.###
+                        rem minima iure voluptates quasi reprehenderit omnis est.
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
                         nostrum officiis voluptate, placeat modi repellendus, dolorem odit perferendis, 
-                        rem minima iure voluptates quasi reprehenderit omnis est.###
+                        rem minima iure voluptates quasi reprehenderit omnis est.
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
@@ -88,25 +67,20 @@
                         rem minima iure voluptates quasi reprehenderit omnis est.
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, 
                         amet rerum esse quidem itaque dignissimos minus. Aperiam adipisci 
-                        ratione suscipit doloribus, et officiis, omnis cumque tempore iusto ad eum vitae.###
+                        ratione suscipit doloribus, et officiis, omnis cumque tempore iusto ad eum vitae.
                     </p>
-                </div>
+                </section>
                 
-        
-                
-                <div class="contenedorImg">
-                    <img src="#" alt="Imagen de juego1 ##"/>
-                    <img src="#" alt="Imagen de juego2 ##">
-                </div>
-        
-            <!----TAL VEZ DEBERÍA USAR SECTIONS EN VEZ DE DIVS AVECES
-            XDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD-->
+                <section class="contenedorImg">
+                    <img src="#" alt="Imagen 1 del juego"/>
+                    <img src="#" alt="Imagen 2 del juego">
+                </section>
 
-                <div class="textoResenia">
+                <section class="article-text">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
                         nostrum officiis voluptate, placeat modi repellendus, dolorem odit perferendis, 
-                        rem minima iure voluptates quasi reprehenderit omnis est.###
+                        rem minima iure voluptates quasi reprehenderit omnis est.
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
@@ -117,16 +91,16 @@
                         rem minima iure voluptates quasi reprehenderit omnis est.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
                         nostrum officiis voluptate, placeat modi repellendus, dolorem odit perferendis, 
-                        rem minima iure voluptates quasi reprehenderit omnis est.###
+                        rem minima iure voluptates quasi reprehenderit omnis est.
                     </p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eius vel et id 
                         nostrum officiis voluptate, placeat modi repellendus, dolorem odit perferendis, 
-                        rem minima iure voluptates quasi reprehenderit omnis est.###
+                        rem minima iure voluptates quasi reprehenderit omnis est.
                     </p>
-                </div>
+                </section>
 
-                <div id="conclusionYNota">
+                <!-- <section id="conclusionYNota">
                     <div id="notaFinal">
 
                         <h3>Nota Final: </h3>
@@ -137,41 +111,50 @@
             
                     </div>
 
-                    <div id="sintesis">
+                    <div class="sintesis">
                         <p>
                             Síntesis diminuta de la opinion del juego, Lorem ipsum dolor, 
-                            sit amet consectetur adipisicing elit. ###
+                            sit amet consectetur adipisicing elit. 
                         </p>
                     </div>
                 
-                </div>
-            </div>
+                </section> -->
+
+                <section class="article-end">
+
+                    <div class="sintesis">
+                        <p>
+                            Síntesis diminuta de la opinion del juego, Lorem ipsum dolor, 
+                            sit amepudiandae, error sint soluta, magni laudantium, dolore reprehenderit perferendis quod quasi officiis obcaecati neque maxime molestiae delectus iusto tenetur laborum. Error.
+                        </p>
+                    </div>
+
+                    <div class="score">
+                        <h3>Nota Final: </h3>
+                        <span>10</span>
+                    </div>
+                
+                </section>
+                
+            </article>
+
+            <aside class="game-info">
+                <h3>Información del juego</h3>
         
+                <ul>
+                    <li>Géneros: #</li>
+                    <li>Plataformas: #</li>
+                    <li>Creador: #</li>
+                    <li>Nacionalidad: #</li>
+                </ul>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quas ratione totam libero necessitatibus ab enim, non reiciendis modi vel. Consectetur nostrum tempore similique, nesciunt soluta iure esse laudantium dolorum? ipsum dolor sit amet consectetur adipisicing elit. Odit quas ratione totam libero necessitatibus ab enim, non reiciendis modi vel. Consectetur nostrum tempore similique, nesciunt soluta iure esse laudantium dolorum? ipsum dolor sit amet consectetur adipisicing elit. Odit quas ratione totam libero necessitatibus ab enim, non reiciendis modi vel. Consectetur nostrum tempore similique, nesciunt soluta iure esse laudantium dolorum?</p>
+            </aside>
 
-
-
-            <div class="tarjetasReseniasRecomendadas">
+            <section class="tarjetasReseniasRecomendadas">
                 <p>PLACEHOLDER ZONA DE TARJETAS DE RESEÑAS RECOMENDADAS</p>
-            </div>
-
-            
-        </div>
+            </section>
     </main>
-
-    <aside class="aside">
-    <div class="divAside">
-        <h3>Información del juego</h3>
-
-        <ul>
-            <li>Géneros: #</li>
-            <li>Plataformas: #</li>
-            <li>Creador: #</li>
-            <li>Nacionalidad: #</li>
-        </ul>
-
-        <P>QUIERO PONER ALGO EN ESTA ZONA LIBRE, SINO EL ASIDE QUEDA MUY CHICO</P>
-    </div>
-    </aside>
 
 
 
