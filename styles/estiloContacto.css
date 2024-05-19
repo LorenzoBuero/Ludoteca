@@ -1,52 +1,234 @@
-:root{
-    --blanco: #fffcfa;
-    /*--gris-fondo: #e7e7e7;*/
-    --rosita: #ffe5c6;
-    --naranja: #ffa500;
-    --verde-fuerte:#39ff14;
-    --negro-verdoso: #071a03;
-  
+/* PALETA DE COLORES */
+:root {
+  --blanco: #fffcfa;
+  --gris-fondo: #e7e7e7;
+  --rosita: #ffe5c6;
+  --naranja: #ffa500;
+  --verde-fuerte: #39ff14;
+  --negro-verdoso: #071a03;
 }
 
-
-.contact-method {
-    margin: 20px 0;
-}
-.social-icons {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-}
-.social-icons a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-    font-size: 24px;
-}
-.social-icons a:hover {
-    color: #0073b1; 
-}
-.contact-form {
+/* MAIN */
+.mainContacto {
+  display: flex;
+  justify-content: flex-start;
+  margin: 80px 25px 10px 25px;
+  background-color: var(--blanco);
+  }
+  /* FORMULARIO*/
+  .contenedorFormContacto {
     display: flex;
     flex-direction: column;
-}
-.contact-form label {
-    margin: 10px 0 5px;
-}
-.contact-form input, .contact-form textarea {
+    width: 50%;
+  }
+    .mainContacto p {
+      margin: 0px 0px 25px 0px;
+      color: --negro-verdoso;
+      padding: 8px;
+      border-radius: 15px;
+    }
+    .form {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border: none;
+      padding: 10px;
+    }
+    
+    .nombreApellido {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 46%;
+    }
+    .edad {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 15%;
+    }
+    .correo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 75%;
+    }
+    .ubicacion {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 22%;
+    }
+    .adjuntarFoto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
+      width: 68%;
+      padding: 10px;
+      border: 1px solid --rosita;
+      border-radius: 15px;
+      background-color: --rosita;
+      margin-bottom: 15px;
+    }
+      .adjuntarFoto input[type="file"] {
+        width: 86%;
+        margin-left: 10px;
+      }
+    .jugasJuegos {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+      .jugasJuegos input[type="radio"] {
+        margin-left: 20px;
+      }
+    .comentarios {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px;
+      width: 100%;
+    }
+      .mainContacto input[type="text"],
+      .mainContacto input[type="number"],
+      .mainContacto input[type="email"],
+      .mainContacto select,
+      .jugasJuegos {
+        padding: 10px;
+        border: 1px solid --rosita;
+        border-radius: 15px;
+        background-color: --rosita;
+        margin-bottom: 15px;
+        width: calc(100%);
+      }
+      #comentarios {
+        width: 100%;
+        flex-grow: 1;
+        resize: vertical;
+        padding: 10px;
+        border: 1px solid --rosita;;
+        border-radius: 15px;
+        background-color: --rosita;
+        margin-bottom: 15px;
+      }
+      .terminosContenedor {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid --rosita;
+        border-radius: 15px;
+        background-color: --rosita;
+        margin-bottom: 15px;
+      }
+        .terminosContenedor label {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+        }
+        .terminosContenedor input[type="checkbox"] {
+          width: 15px;
+          height: 15px;
+          border-radius: 5px;
+          background-color: var(--naranja);
+          margin-right: 5px;
+          appearance: none;
+          cursor: pointer;
+        }
+        .terminosContenedor input[type="checkbox"]:checked {
+          background-color: var(--verde-fuerte);
+        }
+        .terminosContenedor a {
+          color: var(--naranja);
+          text-decoration: none;
+        }
+    /* Botón Enviar */
+    .btnEnviar {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+      .btnEnviar input[type="submit"] {
+        font-weight: bold;
+        background-color: var(--verde-fuerte); 
+        color: #071A03;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px; 
+        cursor: pointer; 
+      }
+      .btnEnviar input[type="submit"]:hover {
+        background-color: var(--naranja);
+      }
+  /* RRSS */
+  .redesContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: var(--naranja);
+    color: var(--blanco);
+    border: 0;
+    border-radius: 25px;
+    width: 40%;
+    height: 50%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.contact-form button {
+  }
+    .redesContacto h2 {
+      margin-bottom: 25px;
+      font-weight: bold;
+      padding: 8px;
+    }
+    .redesIconos {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center;
+    }
+  .redesContacto .redesIconos a {
+    width: 60%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.contact-form button:hover {
-    background-color: #45a049;
-}
+    border-radius: 15px;
+    background-color: var(--rosita);
+    color: #071A03;
+    margin-bottom: 15px;
+  } 
+  .redesContacto a:hover {
+    background-color: var(--verde-fuerte);
+  }
+  .redesContacto .redesIconos a i,
+  .redesContacto .redesIconos a span,
+  .redesContacto .redesIconos a h3 {
+    margin: 0 5px;
+    font-size: 15px;
+  }
+  .redesContacto .redesIconos a span {
+    font-weight: bold;
+  }

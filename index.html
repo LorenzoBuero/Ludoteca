@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/estiloGeneral.css">
+    
+    <!--COSAS DE AFUERA-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <title>Ludoteca-Inicio</title>
+    
+    <!--COSAS DE ACÁ ADENTRO-->
+    <link rel="stylesheet" href="styles/estiloGeneral.css">
+    <link rel="stylesheet" href="styles/estiloIndex.css">
+    <title>Inicio | Ludoteca</title>
 </head>
 
 <body>
     
         <nav class="nav">
-            <!-- Si usamos un logo 
-                <div>
-                <a class="logoHeader" href="index.html">
-                    <img id="logo" src="#" alt="logo">   
-                </a>
-            </div> 
-            Si usamos sólo en nombre de la página -->
+            <a href="index.html" class="nav-logo-titulo"><i class="fa-solid fa-gamepad logo"></i>Ludoteca</a>
     
             <ul>
-                <li><a href="../../index.html" class="nav-logo"><i class="logo"></i>Ludoteca</a></li>
                 <li><a class="nav-link" href="#">Reseñas</a></li>
-                <li><a class="nav-link" href="../sobreNosotros.html">Nosotros</a></li>
-                <li><a class="nav-link" href="../contacto.html">Contacto</a></li>
-                <li>
-                    <form class="buscador">
-                        <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
-                        <button class="button-submit" type="submit" value="Buscar">Buscar</button>
-                    </form>
-                </li>
-            </ul>
+                <li><a class="nav-link" href="pages/sobreNosotros.html">Nosotros</a></li>
+                <li><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+
+            </ul>    
+
+            <form class="buscador">
+                <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
+                <button class="button-submit" type="submit" value="Buscar">Buscar</button>
+            </form>
+                
+            
         </nav> 
     
         <header>a-</header>
@@ -81,15 +80,16 @@
         </section>
         <hr>
     </main>
+
+
     <footer class="footer">
         <nav class="navegacionFooter">
-            <a href="#">Términos y condiciones</a>
+            <p>&copy; 2024 <a href="#">Ludoteca</a>~ Todos los derechos reservados.</p>
+           
             <div class="container">
-<!-- Acá yo pondría icons con el enlace a las redes (que podemos usar nuestras o crearlas para que existan jajaja quién sabe si alguno se quiera quedar con esta página y hacerla luego un proyecto personal) Aglo así: -->
-
                 <ul class="redesSociales">
                     <li>
-                        <a href="mailto:correo@ejemplo.com">
+                        <a href="#">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </li>
@@ -105,10 +105,17 @@
                     </li>
                 </ul>
             </div>
-            <p>&copy; 2024 <a href="#">Nombre de la página</a>. Todos los derechos reservados.</p>
+
+            <a href="#">Términos y condiciones</a>
         </nav>
+
+        <a href="#" class="flechaSubir">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </a>
+
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"></script>
 </body>
 </html>

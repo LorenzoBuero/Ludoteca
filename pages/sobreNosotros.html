@@ -2,41 +2,40 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros</title>
-
+    
+    <!--COSAS DE AFUERA-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <!--COSAS DE ACÁ ADENTRO-->
     <link rel="stylesheet" href="../styles/estiloGeneral.css">
     <link rel="stylesheet" href="../styles/estiloSobreNosotros.css">
+    <title>Sobre Nosotros | Ludoteca</title>
 </head>
-<body>
-    <header>
-        
-        <nav class="nav">
-            <!-- Si usamos un logo 
-                <div>
-                <a class="logoHeader" href="index.html">
-                    <img id="logo" src="#" alt="logo">   
-                </a>
-            </div> 
-            Si usamos sólo en nombre de la página -->
-    
-            <ul>
-                <li><a href="../../index.html" class="nav-logo"><i class="logo"></i>Ludoteca</a></li>
-                <li><a class="nav-link" href="#">Reseñas</a></li>
-                <li><a class="nav-link" href="../sobreNosotros.html">Nosotros</a></li>
-                <li><a class="nav-link" href="../contacto.html">Contacto</a></li>
-                <li>
-                    <form class="buscador">
-                        <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
-                        <button class="button-submit" type="submit" value="Buscar">Buscar</button>
-                    </form>
-                </li>
-            </ul>
-        </nav> 
-    </header>
 
-    <h1>a</h1>
+
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo-titulo"><i class="fa-solid fa-gamepad logo"></i>Ludoteca</a>
+
+        <ul>
+            <li><a class="nav-link" href="#">Reseñas</a></li>
+            <li><a class="nav-link" href="pages/sobreNosotros.html">Nosotros</a></li>
+            <li><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+
+        </ul>    
+
+        <form class="buscador">
+            <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
+            <button class="button-submit" type="submit" value="Buscar">Buscar</button>
+        </form>
+            
+        
+    </nav> 
+
+    <header>a-</header>
 
     <main>
         <section>
@@ -77,8 +76,40 @@
             </table>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 - El grupo mas mejor</p>
+    <footer class="footer">
+        <nav class="navegacionFooter">
+            <p>&copy; 2024 <a href="#">Ludoteca</a>~ Todos los derechos reservados.</p>
+           
+            <div class="container">
+                <ul class="redesSociales">
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#">Términos y condiciones</a>
+        </nav>
+
+        <a href="#" class="flechaSubir"><!--HACER QUE LA FLECHITA SOLO APAREZCA EN LAS PAGINAS CON SCROLL-->
+            <i class="fa-solid fa-circle-chevron-up"></i><!--preferentemente hacerlo por código-->
+        </a>
+
     </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"></script>
 </body>
 </html>

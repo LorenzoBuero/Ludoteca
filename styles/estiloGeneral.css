@@ -1,5 +1,7 @@
 /*Configuracion general*/
 * {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -30,26 +32,17 @@ main
 }
 
 
-/* HEADER GENERAL*/
-/* 
-.header {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-}
-*/ /* BORRÉ EL HEADER, EL POR QUÉ ESTÁ EN EL ARCHIVO .txt */
-
-
-
-
 /* NAV-BAR */
 .nav {
+  height: 60px;/*PROVISIONAL*/
   background-color: var(--negro-verdoso);
   padding: 15px 2% 15px 3%;
-  /*display: grid;
-  grid-template-columns: 100%;*/
   width: 100%;
   position: fixed;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* lista que contiene los elementos del nav */
@@ -59,19 +52,17 @@ main
   list-style: none;
 }
 
-
-
-
-
-
-
-/* ELEMENTOS DEL NAV */
-
 /* título del nav */
-.nav-logo {
-  /* text-decoration: none; */ /* NO CAMBIA NADA */
-  font-size: 2em;
+.nav-logo-titulo {
+  text-decoration: none; 
+  font-size: 1.5em;
   color: var(--naranja);
+}
+.nav-logo-titulo:hover{
+  text-decoration: underline;
+}
+.nav-logo-titulo i{
+  margin-right: 3px;
 }
 
 /* links del nav */
@@ -94,23 +85,6 @@ main
   transition: all 250ms;
 }
 
-/* esto mueve los links del nav hacia el medio (selecciona el 2do hijo de tipo <li>, y le dice "poné todo el espacio que tengas, como margin-left") */
-.nav ul li:nth-child(2) {
-  margin-left: auto;
-}
-
-/* exactamente lo mismo que el anterior, pero para mover el buscador hacia la derecha de todo */
-.nav ul li:nth-child(4) {
-  margin-right: auto;
-}
-
-/* .navegacion ul:nth-child(2) {
-  padding: 300px;
-} */ /*NO CAMBIA NADA*/
-
-/* .nav-link a {
-  padding: 5px 15px;
-} */ /*NO CAMBIA NADA*/
 
 
 
@@ -151,4 +125,50 @@ main
 
 
 /* FOOTER */
-footer {background-color: var(--rosita);}
+.footer {
+  background-color: var(--negro-verdoso);
+  color: var(--blanco);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navegacionFooter {
+  display: flex;
+  align-items: center;
+  color: var(--rosita); 
+}
+.navegacionFooter a {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.navegacionFooter a:hover {
+  color: var(--verde-fuerte);
+}
+.footer p {
+  font-size: 14px;
+  margin-right: 20px;
+}
+.footer ul {
+  list-style: none;
+  margin: 0; 
+  padding: 0; 
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.flechaSubir {
+  position: fixed;
+  bottom: 5vh;
+  right: 5vh;
+  text-decoration: none;
+  color: var(--naranja);
+}
+
+@media screen and (max-width: 780px){
+  .navegacion{
+    display: none;
+  }
+}
