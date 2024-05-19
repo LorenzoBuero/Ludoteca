@@ -82,26 +82,9 @@ h2 {
     align-items: center;
 }
 
-/* #notaFinal{
-    width: auto;
-    display: inline-block;
-} */
-/*LE CAMBIÉ EL NOMBRE Y LE PUSE score, ABAJO ESTÁN LOS ESTILOS*/
-
-/* #notaFinal h3{
-    color: var(--naranja);
-    font-size: 1.4em;
-    
-    padding-left: 15%;
-    padding-bottom: 10px;
-} */
 
 
-
-/* div que contiene el h3 "Nota Final" y la nota */
 .score {
-    /* width : 5em;
-    height: 5em; */
     /*SI PONEMOS LOS VALORES EN em, CUANDO SE APLIQUEN LAS MEDIA QUERIES SE VA A MODIFICAR ESTO*/
     width: 120px;
     height: 90px;
