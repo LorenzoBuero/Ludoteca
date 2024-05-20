@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!--COSAS DE AFUERA-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
     <!--COSAS DE ACÁ ADENTRO-->
-    <link rel="stylesheet" href="../styles/estiloGeneral.css">
-    <link rel="stylesheet" href="../styles/estiloContacto.css">
+    <link rel="stylesheet" href="../styles/estiloGeneral.css" />
+    <link rel="stylesheet" href="../styles/estiloContacto.css" />
     <title>Contacto | Ludoteca</title>
-</head>
+  </head>
 
-<body>
-    <nav class="nav">
+  <body>
+    <body>
+      <nav class="nav">
         <a href="../index.html" class="nav-logo-titulo"><i class="fa-solid fa-gamepad logo"></i>Ludoteca</a>
-
+  
         <ul>
-            <li><a class="nav-link" href="#">Reseñas</a></li>
-            <li><a class="nav-link" href="sobreNosotros.html">Nosotros</a></li>
-            <li><a class="nav-link" href="contacto.html">Contacto</a></li>
-
-        </ul>    
-
+            <li><a href="buscador-resenias.html" class="btnGenerico">Reseñas</a></li>
+            <li><a href="sobre-nosotros.html" class="btnGenerico">Nosotros</a></li>
+            <li><a href="contacto.html" class="btnGenerico">Contacto</a></li>
+  
+        </ul>  
+  
         <form class="buscador">
             <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
             <button class="button-submit" type="submit" value="Buscar">Buscar</button>
@@ -33,127 +37,184 @@
             
         
     </nav> 
+  
+    <span>a-</span>
 
-    <header>a-</header>
+    <main class="mainContacto">
+      <div class="contenedorFormContacto">
+        <h1>Contactanos</h1>
+        <p>
+          Los campos marcados con un asterisco (*) son obligatorios para
+          completar el formulario.
+        </p>
+        <form action="" method="" class="form">
+          <label for="nombre" class="campoForm" id="Nombre">
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              size="10"
+              maxlength="15"
+              placeholder="Nombre"
+            />
+          </label>
 
-   <main class="mainContacto">
-        <div class="contenedorFormContacto"> 
-            <h1>Contactanos</h1>
-            <p>Los campos marcados con un asterisco (*) son obligatorios para completar el formulario.</p>
-            <form action="" method="" class="form">
-                 <label for="nombre" class="nombreApellido">
-                    <input type="text" name="nombre" id="nombre" size="10" maxlength="15" placeholder="Nombre">
-                </label>
-                <label for="apellido" class="nombreApellido">
-                    <input type="text" name="apellido" id="apellido" size="10" maxlength="22" placeholder="Apellido">
-                 </label>
-                <label for="edad" class="edad">
-                     <input type="number" name="edad" id="edad" min="16" max="100" required placeholder="Edad *">
-                </label>
-                <label for="correo" class="correo">
-                    <input type="email" name="correo" id="correo" placeholder="Email *: ejemplo@dominio.com" required>
-                </label>
-                <label for="ubicacion" class="ubicacion">
-                    <select name="ubicacion" id="ubicacion">
-                        <option value="elegir" disabled selected>Elegir país</option>
-                        <option value="arg">Argentina</option>
-                        <option value="uru">Uruguay</option>
-                        <option value="chi">Chile</option>
-                        <option value="par">Paraguay</option>
-                        <option value="bol">Bolivia</option>
-                        <option value="col">Colombia</option>
-                        <option value="per">Perú</option>
-                        <option value="ven">Venezuela</option>
-                        <option value="bra">Brasil</option>
-                        <option value="ecu">Ecuador</option>
-                        <option value="mx">México</option>
-                        <option value="es">España</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </label>
-                <label for="adjuntar" class="adjuntarFoto"> Foto:
-                    <input type="file" name="adjuntar" id="adjuntar">
-                </label>
-                <label for="frecuenciaJugar" class="jugasJuegos"> ¿Sueles jugar videojuegos?
-                    <input type="radio" name="residencia" id="residencia" value="1"> Si
-                    <input type="radio" name="residencia" id="residencia" value="2"> No
-                    <input type="radio" name="residencia" id="residencia" value="3"> A veces
-                </label>
-                <label for="comentarios" class="comentarios">
-                    <textarea name="comentarios" id="comentarios" cols="30" rows="10" required placeholder="Dejanos tu omentario *"></textarea>
-                </label> 
 
-                <div class="terminosContenedor">
-                    <label for="terminos">Acepto los <a href="#">Términos y Condiciones </a><small>*</small>
-                        <input type="checkbox" name="terminos" id="terminos" required>
-                    </label>
-                </div>         
+          <label for="apellido" class="campoForm" id="Apellido">
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              size="10"
+              maxlength="22"
+              placeholder="Apellido"
+            />
+          </label>
 
-                <div class="btnEnviar">
-                 <input type="submit" value="Enviar">
-                </div>   
-            </form>
+
+          <label for="edad" class="campoForm" id="Edad">
+            <input
+              type="number"
+              name="edad"
+              id="edad"
+              min="16"
+              max="100"
+              required
+              placeholder="Edad *"
+            />
+          </label>
+
+
+          <label for="correo" class="campoForm" id="Correo">
+            <input
+              type="email"
+              name="correo"
+              id="correo"
+              placeholder="Email *: ejemplo@dominio.com"
+              required
+            />
+          </label>
+
+
+          <label for="ubicacion" class="campoForm" id="Ubicacion"> 
+            <select name="ubicacion" id="ubicacion">
+              <option value="elegir" disabled selected>Elegir país</option>
+              <option value="arg">Argentina</option>
+              <option value="uru">Uruguay</option>
+              <option value="chi">Chile</option>
+              <option value="par">Paraguay</option>
+              <option value="bol">Bolivia</option>
+              <option value="col">Colombia</option>
+              <option value="per">Perú</option>
+              <option value="ven">Venezuela</option>
+              <option value="bra">Brasil</option>
+              <option value="ecu">Ecuador</option>
+              <option value="mx">México</option>
+              <option value="es">España</option>
+              <option value="otro">Otro</option>
+            </select>
+          </label>
+
+
+          <label for="adjuntar" class="campoForm" id="AdjuntarFoto">
+            Foto:
+            <input type="file" name="adjuntar" id="adjuntar" />
+          </label>
+
+
+          <label for="frecuenciaJugar" class="campoForm" id="JugasJuegos">
+            ¿Sueles jugar videojuegos?
+            <input type="radio" name="residencia" id="residencia" value="1" />
+            Si
+            <input type="radio" name="residencia" id="residencia" value="2" />
+            No
+            <input type="radio" name="residencia" id="residencia" value="3" /> 
+            A veces
+          </label>
+
+
+          <label for="comentarios" class="campoForm" id="Comentarios">
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              cols="30"
+              rows="10"
+              required
+              placeholder="Dejanos tu comentario *"
+            ></textarea>
+          </label>
+
+
+          <div class="campoForm" id="terminosContenedor">
+            <label for="terminos">Acepto los <a href="#">Términos y Condiciones </a><small>*</small>
+              <input type="checkbox" name="terminos" id="terminos" required />
+            </label>
+          </div>
+
+          <div class="btnEnviar">
+            <input type="submit" value="Enviar" /><!--¿¿¿¿¿PUEDE SER UN BOTON??????--->
+          </div>
+        </form>
+      </div>
+
+
+
+      <div class="redesContacto"><!--ESTO PODRÍA SER UN ASIDE(?-->
+        <h2>Otras formas para mantenernos conectados</h2>
+        <div class="redesIconos">
+          <a href="#" target="_blank" class="redSocial">
+            <i class="fas fa-envelope"></i>
+            <span>Email: </span>
+            <h3>ludoteca.reseña@gmail.com</h3>
+          </a>
+          <a href="#" class="redSocial">
+            <i class="fab fa-twitter"></i>
+            <span>X | Twitter: </span>
+            <h3>@LudotecaReseña</h3>
+          </a>
+          <a href="#" target="_blank" class="redSocial">
+            <i class="fab fa-telegram"></i>
+            <span>Telegram: </span>
+            <h3>@LudotecaReseña</h3>
+          </a>
         </div>
-       
-        <div class="redesContacto">
-            <h2>Otras formas para mantenernos conectados</h2>
-            <div class="redesIconos">
-              <a href="#" target="_blank" class="redSocial">
-                <i class="fas fa-envelope"></i>
-                <span>Email: </span>
-                <h3>ludoteca.reseña@gmail.com</h3>
-              </a>
-              <a href="#" class="redSocial">
-                <i class="fab fa-twitter"></i>
-                <span>X | Twitter: </span>
-                <h3>@LudotecaReseña</h3>
-              </a>
-              <a href="#" target="_blank" class="redSocial">
-                <i class="fab fa-telegram"></i>
-                <span>Telegram: </span>
-                <h3>@LudotecaReseña</h3>
-              </a>
-            </div>
-        </div>
-
-    </main> 
-   
+      </div>
+    </main>
 
     <footer class="footer">
-        <nav class="navegacionFooter">
-            <p>&copy; 2024 <a href="#">Ludoteca</a>~ Todos los derechos reservados.</p>
-           
-            <div class="container">
-                <ul class="redesSociales">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-telegram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+      <nav class="navegacionFooter">
+          <p>&copy; 2024 <a href="../index.html">Ludoteca</a>~ Todos los derechos reservados.</p>
+         
+          <div class="container">
+              <ul class="redesSociales">
+                  <li>
+                      <a href="#" target="_blank">
+                          <i class="fas fa-envelope"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" target="_blank">
+                          <i class="fab fa-twitter"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#" target="_blank">
+                          <i class="fab fa-telegram"></i>
+                      </a>
+                  </li>
+              </ul>
+          </div>
 
-            <a href="#">Términos y condiciones</a>
-        </nav>
+          <a href="#">Términos y condiciones</a>
+      </nav>
 
-        <a href="#" class="flechaSubir"><!--HACER QUE LA FLECHITA SOLO APAREZCA EN LAS PAGINAS CON SCROLL-->
-            <i class="fa-solid fa-circle-chevron-up"></i><!--preferentemente hacerlo por código-->
-        </a>
+      <a href="#" class="flechaSubir">
+          <i class="fa-solid fa-circle-chevron-up"></i>
+      </a>
 
-    </footer>
+  </footer>
 
-    <script src="../js/index.js"></script>
-    <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"></script>
-        
-</body>
+    <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

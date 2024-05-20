@@ -21,11 +21,11 @@
             <a href="index.html" class="nav-logo-titulo"><i class="fa-solid fa-gamepad logo"></i>Ludoteca</a>
     
             <ul>
-                <li><a class="nav-link" href="#">Reseñas</a></li>
-                <li><a class="nav-link" href="pages/sobreNosotros.html">Nosotros</a></li>
-                <li><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                <li><a href="pages/buscador-resenias.html" class="btnGenerico" target="_blank">Reseñas</a></li>
+                <li><a href="pages/sobre-nosotros.html" class="btnGenerico" target="_blank">Nosotros</a></li>
+                <li><a href="pages/contacto.html" class="btnGenerico" target="_blank">Contacto</a></li>
 
-            </ul>    
+            </ul>  
 
             <form class="buscador">
                 <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
@@ -35,71 +35,134 @@
             
         </nav> 
     
-        <header>a-</header>
+        <span>a-</span>
 
-    <main id="main" class="main">
+
+
+
+    <main>
+
+
         <section class="seccionPrincipal">
-            <h1 class="tituloPrincipal">Nombre de la página</h1>
+            
+                <article class="encabezado">
+                    <div class="titulos">
+                        <h1 class="tituloPrincipal">Ludoteca</h1>
+            
+                        <h2 class="subtituloPrincipal">Valoramos los videojuegos con objetividad</h2>
+                    </div>
 
-            <h2 class="subtituloPrincipal">Eslogan que describa la página</h2>
+                    <span>¿Qué es Ludoteca?</span>
+                    <p>
+                        Ludoteca es una página de reseñas de videojuegos, valoramos los juegos objetivamente, basandonos
+                        en su originalidad, el impacto que causan y su calidad general.
+                    </p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ipsum minus harum totam nemo blanditiis! Quod accusantium totam nemo soluta facilis porro vel obcaecati. Aspernatur exercitationem eius totam iusto incidunt.</p>
-
-            <button class="botonReseñas" type="button">
-                <a href="#">Leer reseñas</a>
-            </button>
-            <button class="botonContacto" type="button">
-                <a href="#">Contactanos</a>
-            </button>
-
-            <div class="imgHome">
-                <img src="#" alt="Imagen de la home">
-            </div>
-
-        <hr>
-        <section id="masBuscados" 
-            class="reseñasMasBuscadas">
-            <h3 class="tituloSeccion">Reseñas màs buscadas</h3>
+                    <div class="botones-en-mitad">
+                        <a href="pages/buscador-resenias.html" target="_blank" class="btnGenerico">Leer reseñas</a>
+                        <a href="pages/contacto.html" target="_blank" class="btnGenerico">Contactanos</a>
+                    </div>
+                </article>
                 
-            <div class="reseña" id="reseñaContainer">
-                <div>
-                    <a href="#">
-                        <div class="fotoYtitulo">
-                            <img class="imgreseña" src="#" alt="Nombre Juego 1">
-                                <div class="tituloJuego">
-                                    <h4>Nombre del Juego 1</h4>
-                                </div>
-                        </div>
-                    </a>
+                <div class="imgDerecha">
+                    <img src="images/imagenes_Index/Videojuegos-Index.jpeg" alt="Imagen de varios personajes de videojuegos">
                 </div>
-                 <!-- Acá hay que replicar con las otras más buscadas -->
-            </div>
-            <button class="botonAnterior">Anterior</button>  
-            <button class="botoSiguiente">Siguiente</button>
-            <!-- Estos botones depués pueden cambiar a otra cosa, como una img o un icon o que sólo aparezcan en mobile, para desk podemos dejar sólo 4 o 5 reseñas sugeridas y que se vean sin botones. En mobile sería mejor deslizar o que haya un botón para que no aparezcan una por una, una debajo de la otra.-->
+                
+            
+
+            
+                <article class="preguntas">
+                    <hr>
+
+                    <span>¿Porqué es tan importante valorar los juegos objetivamente?</span>
+                    <p>
+                        Muchas otras páginas de reseñas reciben juegos gratuitos por parte de las 
+                        desarrolladoras a cambio de inflar un poco la valoración del producto, 
+                        esto lleva a que la gente se haga ideas erroneas de la calidad real de estos juegos.
+                    </p>
+
+                    <span>¿Porqué valoramos los juegos por su originalidad e impacto?</span>
+                    <p>
+                        Valoramos los juegos teniendo en cuenta estos aspectos (además de otros) porque
+                        esto nos dá una mejor perspectiva de la evolución del videojuego y nos hace
+                        entender porque los juegos triunfan.
+                        <br>
+                        Un juego de hace 20 años puede no ser tan entretenido como su contraparte moderna, 
+                        pero aún así tener más impacto y valor.
+                    </p>
+
+                    <hr>
+                </article>
+            
+        
         </section>
-        <hr>
+
+        
+
+
+        
+        <section id="reseñasMasBuscadas">
+            <h3 class="tituloSeccion">Reseñas más buscadas</h3>
+                
+            <div class="reseñas">
+                    
+                <div class="card-reseña">
+                    <img class="card-reseña-img" src="" alt="">
+                    <p>Inicio de la reseña del juego para poner algo y luego un botón</p>
+                    <h3>Título del juego</h3>
+                    <a href="#" class="card-reseña-link">Seguir leyendo</a>
+                </div>
+
+                <div class="card-reseña">
+                    <img class="card-reseña-img" src="../images/imagenes_resenias/cs1.6/cs1.6-icono.jpeg" alt="Imagen de C.S.-1.6">
+                    <p>El juego que cambio los shooter multijugador</p>
+                    <h3>Counter-Strike 1.6</h3>
+                    <a href="resenias/Resenia-Counter-Strike-1.6.html" class="card-reseña-link">Seguir leyendo</a>
+                </div>
+
+                <div class="card-reseña">
+                    <img class="card-reseña-img" src="" alt="">
+                    <p>Inicio de la reseña del juego para poner algo y luego un botón</p>
+                    <h3>Título del juego</h3>
+                    <a href="#" class="card-reseña-link">Seguir leyendo</a>
+                </div>
+
+                <div class="card-reseña">
+                    <img class="card-reseña-img" src="" alt="">
+                    <p>Inicio de la reseña del juego para poner algo y luego un botón</p>
+                    <h3>Título del juego</h3>
+                    <a href="#" class="card-reseña-link">Seguir leyendo</a>
+                </div>
+            
+            </div>
+        </section>
+        
     </main>
+
+
+
+
+
 
 
     <footer class="footer">
         <nav class="navegacionFooter">
-            <p>&copy; 2024 <a href="#">Ludoteca</a>~ Todos los derechos reservados.</p>
+            <p>&copy; 2024 <a href="index.html">Ludoteca</a>~ Todos los derechos reservados.</p>
            
             <div class="container">
                 <ul class="redesSociales">
                     <li>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <i class="fab fa-telegram"></i>
                         </a>
                     </li>
@@ -115,7 +178,7 @@
 
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.js"></script> <!--ESTE SCRIPT NO ANDA-->
     <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"></script>
 </body>
 </html>

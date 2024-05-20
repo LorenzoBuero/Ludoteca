@@ -18,37 +18,130 @@
 }
 
 
-img { size: 100% }
-
 
 /* BODY */
-body {
-  font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-}
+/*body {
+
+}*/
+
 main
 {
   margin-top: 40px;
 }
 
 
+/*DEFAULTS*/
+button, .btnGenerico
+{
+  background-color: var(--verde-fuerte);
+  color: var(--negro-verdoso);
+
+  border-style: none;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+/*ESTE ESTILO ES PARA LOS ANCOR QUE ACTUEN COMO BOTONES*/
+.btnGenerico
+{
+  padding: 5px 15px;
+  border-radius: 5px;
+
+  font-size: 1em;/**/
+}
+
+
+button:hover, .btnGenerico:hover
+{
+  transition: all 300ms;
+  background-color: var(--naranja);
+  color: var(--blanco);
+}
+
+/*USAR class="card-reseña" para crear una tarjeta*/
+/*<div class="card-reseña">
+    <img class="card-reseña-img" src="" alt="">
+    <p>Inicio de la reseña del juego para poner algo y luego un botón</p>
+    <h3>Título del juego</h3>
+    <a href="#" class="card-reseña-link">Seguir leyendo</a>
+  </div>*/
+.card-reseña {
+	display: grid;
+	grid-template-columns: .8fr 1fr;
+	column-gap: 30px;
+
+	background-color: var(--rosita);
+	border-radius: 25px;
+	padding: 25px;
+}
+
+.card-reseña-img {
+	border: 5px solid #000;
+  width: 100%;
+  height: 100%;
+}
+
+.card-reseña-link {
+	background-color: var(--verde-fuerte);
+	border-radius: 20px;
+	color: var(--negro-verdoso);
+  	font-size: .8em;
+  	font-weight: bold;
+	padding: 5px 10px;
+	text-decoration: none;
+	display: inline-block;
+	align-self: center;
+	text-align: center;
+}
+
+.card-reseña-link:hover {
+	background-color: var(--naranja);
+	transition: all 250ms;
+}
+
+
+
+
+img 
+{
+   size: 100% 
+}
+
+
+.main-content {
+  background-color: var(--blanco);
+  border-radius: 20px;
+  padding: 20px 5%;
+  height: fit-content;
+}
+
+
+
+
 /* NAV-BAR */
 .nav {
-  height: 60px;/*PROVISIONAL*/
   background-color: var(--negro-verdoso);
-  padding: 15px 2% 15px 3%;
+  padding: 15px 2%;
   width: 100%;
   position: fixed;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  top: 0px;
 }
 
 /* lista que contiene los elementos del nav */
 .nav ul {
   display: flex;
-  align-items: center;
+  align-items:center;
+  gap: 20px;
   list-style: none;
 }
 
@@ -65,32 +158,7 @@ main
   margin-right: 3px;
 }
 
-/* links del nav */
-.nav-link {
-  background-color: var(--verde-fuerte);
-  border-radius: 5px;
-  color: var(--negro-verdoso);
-  font-size: 1em;
-  font-weight: bold;
-  padding: 5px 15px;
-  text-decoration: none;
-  display: inline-block;
-  margin-left: 20px;
-}
 
-/* efecto aplicado a los links de la navbar cuando se hace hover sobre ellos */
-.nav-link:hover {
-  background-color: var(--naranja);
-  color: var(--negro-verdoso);
-  transition: all 250ms;
-}
-
-
-
-
-
-
-/* --- BUSCADOR DE RESEÑAS --- */
 /* contenedor del formulario "buscador" (input + botón) */
 .buscador {
   display: flex;
@@ -99,66 +167,56 @@ main
 
 /* estilos del input para buscar */
 .input-search {
-  /* flex-grow: 1; */ /*TODOS LOS FLEX-ITEMS TIENEN FLEX-GROW 1 POR DEFECTO*/
   border-radius: 25px 0px 0px 25px;
+  border: none;
   /* font-size: 12px; */ /*CAMBIARLE EL FONT-SIZE HACÍA QUE NO QUEDE ALINEADO CON EL BOTÓN*/
 }
 
 /* estilos del botón */
 .button-submit {
   border-radius: 0px 25px 25px 0px;
-  background-color: var(--verde-fuerte);
 }
 
 /* estilos iguales tanto en el input como en el botón */
 .input-search, .button-submit {
   padding: 5px 10px;
-  border: none;
 }
-
-.button-submit:hover {
-  background-color: var(--naranja);
-  color: var(--blanco);
-  transition: all 250ms;
-}
-
-
 
 /* FOOTER */
 .footer {
   background-color: var(--negro-verdoso);
-  color: var(--blanco);
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .navegacionFooter {
   display: flex;
   align-items: center;
   color: var(--rosita); 
 }
+
 .navegacionFooter a {
   text-decoration: none;
   color: inherit;
-  margin-right: 20px;
-  font-size: 14px;
 }
+
 .navegacionFooter a:hover {
   color: var(--verde-fuerte);
 }
-.footer p {
+
+.navegacionFooter p, .navegacionFooter a{
   font-size: 14px;
   margin-right: 20px;
 }
+
 .footer ul {
   list-style: none;
-  margin: 0; 
-  padding: 0; 
   display: flex;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 0, 20px
 }
+
 .flechaSubir {
   position: fixed;
   bottom: 5vh;
@@ -167,6 +225,7 @@ main
   color: var(--naranja);
 }
 
+/*MEDIA QUERYS*/
 @media screen and (max-width: 780px){
   .navegacion{
     display: none;

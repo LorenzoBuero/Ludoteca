@@ -1,0 +1,74 @@
+main span
+{
+    display: grid;
+    margin: 15px 0px;
+    font-size: 1.3em;
+}
+
+main p
+{
+    font-size: 1em; 
+}
+
+.seccionPrincipal{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    padding: 3%;
+    justify-items: center;
+    align-items: center;
+}
+
+.encabezado{
+    grid-area: 1 / 1 / 4 / 4;
+    margin: 0 0 30px 7%;
+}
+
+.encabezado h1{
+    font-size: 4em;
+    color: var(--naranja);
+}
+
+
+.encabezado p{
+    display: grid;
+    margin-bottom: 20px;
+
+}
+
+.imgDerecha
+{
+    grid-area: 1 / 4 / 4 / 7;
+    margin-right: 7%;
+}
+.imgDerecha img{
+    border-radius: 5%;
+}
+
+.preguntas
+{
+    grid-area: 4 / 1 / 7 / 6;
+}
+
+
+.preguntas p
+{
+    margin-bottom: 40px;
+}
+
+.tituloSeccion{
+    color:var(--naranja);
+    margin: 0 0 0 3%;
+    font-size: 2em;
+}
+
+.reseñas
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    padding: 3%;
+    gap: 2%;
+    justify-content: space-around;
+}
+
