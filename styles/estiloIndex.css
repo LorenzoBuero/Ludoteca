@@ -29,6 +29,10 @@ main p
     color: var(--naranja);
 }
 
+.encabezado h2{
+    font-size: 1.7em;
+}
+
 
 .encabezado p{
     display: grid;
