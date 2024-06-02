@@ -1,6 +1,7 @@
 main {
 	padding: 3%;
 	padding-right: 2%;
+	background-color: var(--blanco);
 }
 
 .main-content{
@@ -10,11 +11,9 @@ main {
 }
 
 main h1 {
-
 	color: var(--naranja);
 	font-size: 2.9em;
 	margin-bottom: 50px;
-
 }
 
 .flecha {

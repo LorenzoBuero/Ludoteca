@@ -1,27 +1,9 @@
-main span
-{
-    display: grid;
-    margin: 15px 0px;
-    font-size: 1.3em;
-}
-
-main p
-{
-    font-size: 1em; 
-}
-
-.seccionPrincipal{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 100px);
+main{  
     padding: 3%;
-    justify-items: center;
-    align-items: center;
-}
-
-.encabezado{
-    grid-area: 1 / 1 / 4 / 4;
-    margin: 0 0 30px 7%;
+    display: grid;
+    grid-template-columns: 100;
+    grid-template-rows: 2;
+    gap: 1%;
 }
 
 .encabezado h1{
@@ -33,46 +15,52 @@ main p
     font-size: 1.7em;
 }
 
-
-.encabezado p{
-    display: grid;
-    margin-bottom: 20px;
-
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.imgDerecha
-{
-    grid-area: 1 / 4 / 4 / 7;
-    margin-right: 7%;
-}
-.imgDerecha img{
-    border-radius: 5%;
+.divTitulos {
+    width: 45%
 }
 
-.preguntas
-{
-    grid-area: 4 / 1 / 7 / 6;
+#imagenDerecha {
+    margin: 80px 0 50px 0;
+    width: 50%;
 }
 
-
-.preguntas p
-{
-    margin-bottom: 40px;
+.article-text {
+    margin: 50px 0;
 }
 
-.tituloSeccion{
-    color:var(--naranja);
-    margin: 0 0 0 3%;
-    font-size: 2em;
+.article-text h3 {
+    font-size: 1.3em;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.article-text p {
+    margin: 0;
+    text-indent: 0;
+}
+
+hr {
+    margin: 30px 0;
 }
 
 .reseñas
 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     padding: 3%;
     gap: 2%;
     justify-content: space-around;
 }
 
+#reseñasMasBuscadas h3
+{
+    font-size: 1.7em;
+
+}

@@ -12,7 +12,7 @@ h2{
 
 }
 
-p{
+main p{
 margin: 30px 0%;
 
 }
@@ -21,7 +21,7 @@ margin: 30px 0%;
   margin: 50px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px repeat(2, 200px);
+  grid-template-rows: 50px repeat(2, 1fr);
   justify-items: center;
   align-content: center;
   row-gap: 50px;
@@ -32,29 +32,14 @@ margin: 30px 0%;
 }
 .card{
   z-index: 1;
+  font-size: 0.9em;
 }
 #nuestroEquipo :last-child{
   grid-area: 3 / 2 / 3 / 3;
 
 }
-
-/*.columna{
-
-  grid-area: 2 / 1 / 2 / 4;
+#nuestroEquipo b
+{
+  font-size: 1.3em;
 
 }
-.card{
-
-}*/
-/*table {
-  width: 100%;
-  border-collapse: collapse;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: center;
-}
-th {
-  background-color: #f2f2f2;
-}*/

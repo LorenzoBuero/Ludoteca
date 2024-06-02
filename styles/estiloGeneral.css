@@ -64,42 +64,52 @@ button:hover, .btnGenerico:hover
   color: var(--blanco);
 }
 
-/*USAR class="card-reseña" para crear una tarjeta*/
-/*<div class="card-reseña">
-    <img class="card-reseña-img" src="" alt="">
-    <p>Inicio de la reseña del juego para poner algo y luego un botón</p>
-    <h3>Título del juego</h3>
-    <a href="#" class="card-reseña-link">Seguir leyendo</a>
-  </div>*/
+
+
+
+
+
 .card-reseña {
 	display: grid;
-	grid-template-columns: .8fr 1fr;
-	column-gap: 30px;
+	grid-template-columns: 1fr .5fr;
+  grid-template-rows: .1fr 190px .1fr;
+	gap: 20px;
 
 	background-color: var(--rosita);
 	border-radius: 25px;
 	padding: 25px;
 }
 
-.card-reseña-img {
-	border: 5px solid #000;
-  width: 100%;
-  height: 100%;
+/* Título del videojuego */
+.card-reseña h3 {
+  grid-column: span 2;
+  text-align: center;
 }
 
+/* Imagen del videojuego */
+.card-reseña-img {
+  max-width: 100%;
+	border: 5px solid #000;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Botón para ir a la reseña */
 .card-reseña-link {
 	background-color: var(--verde-fuerte);
 	border-radius: 20px;
 	color: var(--negro-verdoso);
-  	font-size: .8em;
-  	font-weight: bold;
+  font-size: .8em;
+  font-weight: bold;
 	padding: 5px 10px;
 	text-decoration: none;
 	display: inline-block;
 	align-self: center;
 	text-align: center;
+  grid-column: span 2;
 }
 
+/* Botón para ir a la reseña cuando se le hace hover */
 .card-reseña-link:hover {
 	background-color: var(--naranja);
 	transition: all 250ms;
@@ -108,10 +118,7 @@ button:hover, .btnGenerico:hover
 
 
 
-img 
-{
-   size: 100% 
-}
+
 
 
 .main-content {
@@ -184,7 +191,7 @@ img
 }
 
 /* FOOTER */
-.footer {
+footer {
   background-color: var(--negro-verdoso);
   padding: 15px;
   display: flex;
@@ -192,34 +199,35 @@ img
   justify-content: center;
 }
 
-.navegacionFooter {
+#navegacionFooter {
   display: flex;
   align-items: center;
   color: var(--rosita); 
 }
 
-.navegacionFooter a {
+#navegacionFooter a {
   text-decoration: none;
   color: inherit;
 }
 
-.navegacionFooter a:hover {
+#navegacionFooter a:hover {
   color: var(--verde-fuerte);
 }
 
-.navegacionFooter p, .navegacionFooter a{
+#navegacionFooter p, #navegacionFooter a{
   font-size: 14px;
   margin-right: 20px;
 }
 
-.footer ul {
+footer ul {
   list-style: none;
   display: flex;
   margin: 0, 20px
 }
 
-.flechaSubir {
+#flechaSubir {
   position: fixed;
+  font-size: 30px;
   bottom: 5vh;
   right: 5vh;
   text-decoration: none;
