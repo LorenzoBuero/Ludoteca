@@ -15,11 +15,6 @@ main {
   padding: 20px 5%;
 }
 
-/* título y subtitulo */
-/* .divTitulos{
-    margin: 20px 5%;
-} */
-
 h1 {
   color: var(--naranja);
   font-size: 2.5em;
@@ -41,11 +36,11 @@ h2 {
 /* imagenes */
 .contenedorImg {
   min-height: 100px;
-  /*width: 70%;*/
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
+  margin: 40px 0px;
 }
 
 .contenedorImg img {
@@ -59,9 +54,6 @@ h2 {
 /*nota final*/
 .article-end {
   margin: 10px 10%;
-  /* Acomoda el div en el centro de la pag */
-  /* width: 80%; */
-  /*NO ES NECESARIO, LA LÍNEA ANTERIOR AUTOMÁTICAMENTE HACE QUE TENGA WIDTH AJUSTABLE*/
   min-height: 200px;
   padding: 30px;
 
@@ -75,7 +67,6 @@ h2 {
 }
 
 .score {
-  /*SI PONEMOS LOS VALORES EN em, CUANDO SE APLIQUEN LAS MEDIA QUERIES SE VA A MODIFICAR ESTO*/
   width: 120px;
   height: 90px;
   margin-top: 30px;
@@ -98,9 +89,17 @@ h2 {
   text-indent: 0px;
 }
 
+.article-end h3
+{
+  font-size: 2em;
+  color: var(--naranja);
+  padding-bottom: 20px;
+
+}
+
 /*TARJETAS DE RESEÑAS RECOMENDADAS*/
 .tarjetasReseniasRecomendadas {
-  height: 300px;
+  height: 200px;
   background-color: crimson;
 }
 
@@ -113,7 +112,7 @@ h2 {
   height: fit-content;
 }
 
-.game-info h3 {
+.game-info h4 {
   font-size: 1.4em;
   text-align: center;
   padding: 10px 0px;
@@ -145,7 +144,7 @@ h2 {
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr;
+    grid-template-rows: 0.3fr;
     padding: 1%;
     gap: 1%;
     justify-content: space-around;

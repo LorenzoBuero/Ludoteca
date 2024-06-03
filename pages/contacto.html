@@ -44,7 +44,7 @@
           Los campos marcados con un asterisco (*) son obligatorios para completar el formulario.
         </p>
     
-        <form action="" method="" class="form">
+        <form id="form-contacto"><!--action="" method=""-->
           <input
             type="text"
             name="nombre"
@@ -85,7 +85,7 @@
           >
 
           <select id="ubicacion" name="ubicacion" required>
-            <option value="elegir" disabled selected>Elegir país</option>
+            <option value="" disabled selected>Elegir país</option>
             <option value="arg">Argentina</option>
             <option value="uru">Uruguay</option>
             <option value="chi">Chile</option>
@@ -103,7 +103,7 @@
 
           <div id="file-input">
             <p>Foto</p>
-            <input type="file" id="adjuntar" name="foto" >
+            <input type="file" id="foto" name="foto" >
           </div>
 
           <textarea
@@ -181,6 +181,7 @@
 
     </footer>
 
+    <script src="../scripts/validacionFormularioContacto.js"></script>
     <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"></script>
 
   </body>

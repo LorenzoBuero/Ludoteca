@@ -18,55 +18,11 @@
 }
 
 
-
 /* BODY */
-/*body {
-
-}*/
-
 main
 {
   margin-top: 40px;
 }
-
-
-/*DEFAULTS*/
-button, .btnGenerico
-{
-  background-color: var(--verde-fuerte);
-  color: var(--negro-verdoso);
-
-  border-style: none;
-
-  font-weight: bold;
-  text-decoration: none;
-
-  display: inline-block;
-  cursor: pointer;
-}
-
-
-
-/*ESTE ESTILO ES PARA LOS ANCOR QUE ACTUEN COMO BOTONES*/
-.btnGenerico
-{
-  padding: 5px 15px;
-  border-radius: 5px;
-
-  font-size: 1em;/**/
-}
-
-
-button:hover, .btnGenerico:hover
-{
-  transition: all 300ms;
-  background-color: var(--naranja);
-  color: var(--blanco);
-}
-
-
-
-
 
 
 .card-reseña {
@@ -96,28 +52,48 @@ button:hover, .btnGenerico:hover
 
 /* Botón para ir a la reseña */
 .card-reseña-link {
-	background-color: var(--verde-fuerte);
 	border-radius: 20px;
-	color: var(--negro-verdoso);
   font-size: .8em;
-  font-weight: bold;
 	padding: 5px 10px;
-	text-decoration: none;
-	display: inline-block;
 	align-self: center;
 	text-align: center;
   grid-column: span 2;
 }
 
-/* Botón para ir a la reseña cuando se le hace hover */
-.card-reseña-link:hover {
-	background-color: var(--naranja);
-	transition: all 250ms;
+
+
+/*DEFAULTS*/
+button, .btnGenerico, .card-reseña-link
+{
+  background-color: var(--verde-fuerte);
+  color: var(--negro-verdoso);
+
+  border-style: none;
+
+  font-weight: bold;
+  text-decoration: none;/*NO FUNCIONA*/
+
+  display: inline-block;
+  cursor: pointer;
 }
 
 
 
+button:hover, .btnGenerico:hover, .card-reseña-link:hover
+{
+  transition: all 300ms;
+  background-color: var(--naranja);
+  color: var(--blanco);
+}
 
+
+/*ESTE ESTILO ES PARA LOS ANCOR QUE ACTUEN COMO BOTONES*/
+.btnGenerico
+{
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+}
 
 
 
