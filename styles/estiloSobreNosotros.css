@@ -1,9 +1,10 @@
 .main{
-  padding: 30px 10%
+  padding: 50px 10%
 }
 
 h1{
   font-size: 3em;
+  color: var(--naranja);
 
 }
 
