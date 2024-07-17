@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <title> {% block titulo %}Mi Websita{%endblock titulo %}</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>holi</h1>
+        </header>
+
+        <main>
+            <p><a href="{% url 'pruebita'%}">ir a home</a></p>
+            <p><a href="{% url 'porongolo'%}">ir a Como Va todo</a></p>
+            <p>hola que tal, a mi me gustan mucho las papas fritas, soy un fanatico de no c q cosa
+                y ayerr m,e caí de la bici, soy re pelotudo, ayer le ganam,pos a colombia y messi manqueó pero lo quiero igual
+            </p>
+
+            {% block contenido %}
+
+            {% endblock contenido %}
+        </main>
+     
+    </body>
+</html>

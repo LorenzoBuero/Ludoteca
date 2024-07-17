@@ -1,0 +1,163 @@
+ <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+        <!--COSAS DE AFUERA-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link
+          href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+          rel="stylesheet"
+        >
+
+        <!--COSAS DE ACÁ ADENTRO-->
+        <link rel="stylesheet" href="styles/estiloGeneral.css" >
+        <link rel="stylesheet" href="styles/estiloIndex.css" >
+        <title>Ludoteca</title>
+        <link rel="icon" href="images/Ludoteca_Icono/Ludoteca-Icono.ico" type="image/x-icon">
+
+        <!-- ICONOS FONT-AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">        
+    </head>
+
+
+
+
+
+    <body>
+        <nav class="nav">
+            <a href="index.html" class="nav-logo-titulo"><i class="fa-solid fa-gamepad logo"></i>Ludoteca</a>
+      
+            <ul>
+                <li><a href="pages/buscador-resenias.html" class="btnGenerico">Reseñas</a></li>
+                <li><a href="pages/sobre-nosotros.html" class="btnGenerico">Nosotros</a></li>
+                <li><a href="pages/contacto.html" class="btnGenerico">Contacto</a></li>
+            </ul>  
+      
+            <form class="buscador">
+                <input class="input-search" type="text" placeholder="Buscar reseña..." id="buscar" name="reseña">
+                <button class="button-submit" type="submit" value="Buscar">Buscar</button>
+            </form>       
+        </nav> 
+      
+
+        <main class="main">
+            <article id="article">
+                <div class="encabezado">
+                    <div class="divTitulos">
+                        <h1>Ludoteca</h1>
+                        <h2>Valoramos los juegos con objetividad</h2>
+                        <p>Bienvenido! En este sitio encontrarás reseñas objetivas y detalladas de videojuegos, 
+                            tanto de los últimos lanzamientos como de los clásicos más queridos. Nuestro objetivo 
+                            es proporcionarte análisis profundos e imparciales basados en la originalidad, el impacto 
+                            y la calidad general de cada juego. Explorá nuestras secciones y descubrí todo lo que 
+                            necesitas saber para disfrutar al máximo de tus juegos favoritos.</p>
+                    </div>
+                    <img id="imagenDerecha" src="images/imagenes_Index/Videojuegos-Index.jpeg" alt="Imagen de varios personajes de videojuegos">
+                </div>
+
+                <hr>
+
+                <section class="article-text">
+                    <h3>¿Qué es Ludoteca?</h3>
+                    <p>
+                        Ludoteca es el lugar perfecto para los amantes de los videojuegos que buscan opiniones sinceras 
+                        y certeras. Nos dedicamos a evaluar juegos basándonos en su originalidad, el impacto que causan 
+                        y su calidad general. En este sitio podrás descubrir qué hace único a cada juego y por qué merece 
+                        tu atención, permitiéndote elegir con mejor criterio cuál será tu próxima experiencia gamer.
+                    </p>
+                </section>
+
+                <section class="article-text">
+                    <h3>¿Por qué es tan importante valorar los juegos objetivamente?</h3>
+                    <p>
+                        Valorar los juegos de manera objetiva es crucial, principalmente porque muchos sitios de 
+                        reseñas reciben juegos gratuitos de las compañías desarrolladoras a cambio de ofrecerles 
+                        valoraciones favorables, lo que puede distorsionar la percepción pública sobre la verdadera 
+                        calidad de los juegos.
+                        <br><br>
+                        En Ludoteca, creemos en la transparencia y la honestidad. Nos esforzamos por ofrecerte 
+                        evaluaciones imparciales que te ayuden a tomar decisiones informadas sobre qué juegos se 
+                        ajustan mejor a tus intereses, y creemos que cada jugador merece saber exactamente qué esperar 
+                        de un juego antes de invertir su tiempo y dinero en él.
+                    </p>
+                </section>
+
+                <section class="article-text">
+                    <h3>¿Por qué valoramos los juegos por su originalidad e impacto?</h3>
+                    <p>
+                        Valoramos los juegos teniendo en cuenta su originalidad y su impacto en la industria 
+                        porque esto nos brinda una perspectiva más amplia sobre su evolución. Nos permite comprender
+                         por qué algunos juegos trascienden el tiempo y se convierten en clásicos mientras otros caen 
+                         en el olvido. En Ludoteca, apreciamos cómo la innovación y la creatividad pueden transformar 
+                         la experiencia de juego, y reconocemos que incluso un juego lanzado hace décadas puede seguir 
+                         siendo relevante y apreciado por su influencia duradera en la cultura gamer. Nuestra misión es 
+                         celebrar tanto los éxitos contemporáneos como los hitos históricos, ofreciendo análisis en 
+                         profundidad que te ayuden a descubrir nuevas perspectivas sobre tus juegos favoritos.
+                    </p>
+                </section>
+
+                <hr>
+
+                <section id="reseñasMasBuscadas">
+                    <h3 class="tituloSeccion" style="margin: 0">Reseñas más buscadas</h3>
+                        
+                    <div class="reseñas">
+                            
+                        <div class="card-reseña">                
+                            <h3>Minecraft</h3>
+                            <div class="card-reseña-img" style="background-image: url('images/imagenes_resenias/Minecraft/Minecraft-icono.jpg');"></div>
+                            <p>Supervivencia, imaginación y creatividad en estado puro</p>
+                            <a href="pages/resenias/Resenia-Minecraft.html" class="card-reseña-link">Seguir leyendo</a>
+                        </div>
+
+                        <div class="card-reseña">
+                            <h3>Counter-Strike 1.6</h3>
+                            <div class="card-reseña-img" style="background-image: url('images/imagenes_resenias/cs1.6/cs1.6-icono.jpeg');"></div>
+                            <p>El juego que cambio los shooter multijugador</p>
+                            <a href="pages/resenias/Resenia-Counter-Strike-1.6.html" class="card-reseña-link">Seguir leyendo</a>
+                        </div>
+
+                        <div class="card-reseña">
+                            <h3>Ark Survival Evolved</h3>
+                            <div class="card-reseña-img" style="background-image: url('images/imagenes_resenias/Ark-survival-evolved/Ark-icono.jpg');"></div>
+                            <p>Escapar, matar, domesticar, DINOSAURIOS</p>
+                            <a href="pages/resenias/Resenia-Ark-Survival-Evolved.html" class="card-reseña-link">Seguir leyendo</a>
+                        </div>                   
+                    </div>
+                </section>              
+
+            </article>
+
+        </main>
+
+        <footer>
+            <nav id="navegacionFooter">
+                <p>&copy; 2024 <a href="index.html">Ludoteca</a>~ Todos los derechos reservados.</p>
+             
+                <ul>
+                    <li>
+                        <a href="#" target="_blank"> <i class="fas fa-envelope"></i> </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                    </li>
+
+                    <li>
+                        <a href="#" target="_blank"> <i class="fab fa-telegram"></i> </a>
+                    </li>
+                </ul>
+
+                <a href="#">Términos y condiciones</a>
+            </nav>
+
+            <a href="#" id="flechaSubir"> <i class="fa-solid fa-circle-chevron-up"></i> </a>
+
+        </footer>
+
+        <script src="https://kit.fontawesome.com/80d7ac3803.js" crossorigin="anonymous"></script>
+    </body>
+</html>
